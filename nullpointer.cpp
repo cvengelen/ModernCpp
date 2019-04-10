@@ -16,7 +16,7 @@ void printSomeStruct(const gsl::not_null<SomeStruct*>& someStructPointer) {
   std::cout << "pointer value: " << someStructPointer->m_someStructVal << std::endl;
 }
 
-int main (int argc, char **argv) {
+int main (__attribute__ ((unused)) int argc, __attribute__ ((unused)) char **argv) {
   // gsl::not_null<int*> nullPointer{ nullptr };
 
   SomeStruct someStruct;

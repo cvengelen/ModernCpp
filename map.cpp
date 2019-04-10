@@ -11,7 +11,7 @@
 
 #include "rvo.h"
 
-int main (int argc, char **argv) {
+int main (__attribute__ ((unused)) int argc, __attribute__ ((unused)) char **argv) {
 	std::map<int, Rvo> rvoMap;
 
 	// Call to rvoMap with not existing index creates Rvo with default constructor!

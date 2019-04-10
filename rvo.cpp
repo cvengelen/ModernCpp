@@ -20,7 +20,7 @@ Rvo returnRvoWithMove() {
 	return std::move(rvo);
 }
 
-int main (int argc, char **argv) {
+int main (__attribute__ ((unused)) int argc, __attribute__ ((unused)) char **argv) {
   Rvo rvo1(1, {1, 2, 3});
   std::cout << "rvo1: " << rvo1.getIntVal() << ", vector size: " << rvo1.getVectorValsRef().size();
   if (rvo1.getVectorValsRef().size() > 0) {

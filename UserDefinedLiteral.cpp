@@ -24,7 +24,7 @@ void printUserDefinedLiteral(const UserDefinedLiteral& userDefinedLiteral) {
   std::cout << "userDefinedLiteral: " << userDefinedLiteral.getUserDefinedLiteral() << std::endl;
 }
 
-int main (int argc, char **argv) {
+int main (__attribute__ ((unused)) int argc, __attribute__ ((unused)) char **argv) {
   printUserDefinedLiteral(23_udl);
   return 0;
 }
